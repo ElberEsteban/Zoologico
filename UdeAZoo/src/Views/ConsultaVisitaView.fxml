@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contentConsultaVisita" blendMode="MULTIPLY" prefHeight="405.0" prefWidth="568.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ConsultaVisitaController">
+   <children>
+      <Label layoutX="64.0" layoutY="51.0" text="Cliente" />
+      <Label layoutX="64.0" layoutY="104.0" text="Visitas" />
+      <Label layoutX="64.0" layoutY="161.0" text="Cliente Frecuente" />
+      <TextField fx:id="tfdCantidadVisitas" alignment="CENTER" editable="false" layoutX="177.0" layoutY="98.0" prefHeight="30.0" prefWidth="130.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnConsultarVisita" layoutX="415.0" layoutY="47.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #209698;" text="Consultar" textFill="WHITE" />
+      <ComboBox fx:id="cmbListaClientes" layoutX="177.0" layoutY="47.0" prefHeight="25.0" prefWidth="212.0" promptText="Seleccione el Cliente..." />
+      <TextField fx:id="tfdCleinteFrecuente" alignment="CENTER" editable="false" layoutX="176.0" layoutY="155.0" prefHeight="30.0" prefWidth="130.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

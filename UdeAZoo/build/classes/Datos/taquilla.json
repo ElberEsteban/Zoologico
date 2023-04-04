@@ -1,0 +1,130 @@
+{
+  "id": 1,
+  "taquillero": {
+    "id": "010",
+    "nombre": "Elber Esteban"
+  },
+  "clientes": [
+    {
+      "id": "104256987",
+      "nombre": "Elber González",
+      "socio": true,
+      "saldo": "100000",
+      "abono": 0.0,
+      "visita": 0
+    },
+    {
+      "id": "15698789",
+      "nombre": "Carlos Henao",
+      "socio": false,
+      "saldo": "0",
+      "abono": 0.0,
+      "visita": 0
+    },
+    {
+      "id": "22145896",
+      "nombre": "Margot López",
+      "socio": false,
+      "saldo": "0",
+      "abono": 0.0,
+      "visita": 0
+    }
+  ],
+  "plan": [
+    {
+      "id": 1,
+      "nombre": "Individual",
+      "precio": "50000",
+      "cupo": 1,
+      "guia": false,
+      "alimentacion": false,
+      "obsequio": false,
+      "recorrido": {
+        "id": 1,
+        "nombre": "Bronce",
+        "animal": [
+          {},
+          {},
+          {},
+          {}
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "nombre": "Familiar",
+      "precio": "100000",
+      "cupo": 4,
+      "guia": false,
+      "alimentacion": true,
+      "obsequio": false,
+      "recorrido": {
+        "id": 1,
+        "nombre": "Plata",
+        "animal": [
+          {},
+          {},
+          {},
+          {}
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "nombre": "Institucional",
+      "precio": "2000000",
+      "cupo": 15,
+      "guia": true,
+      "alimentacion": true,
+      "obsequio": false,
+      "recorrido": {
+        "id": 1,
+        "nombre": "Oro",
+        "animal": [
+          {},
+          {},
+          {},
+          {}
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "nombre": "Membresia",
+      "precio": "25000",
+      "cupo": 4,
+      "guia": false,
+      "alimentacion": true,
+      "obsequio": false,
+      "recorrido": {
+        "id": 1,
+        "nombre": "Oro",
+        "animal": [
+          {},
+          {},
+          {},
+          {}
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "nombre": "Cumpleaños",
+      "precio": "35000",
+      "cupo": 1,
+      "guia": false,
+      "alimentacion": true,
+      "obsequio": true,
+      "recorrido": {
+        "id": 1,
+        "nombre": "Plata",
+        "animal": [
+          {},
+          {},
+          {},
+          {}
+        ]
+      }
+    }
+  ]
+}

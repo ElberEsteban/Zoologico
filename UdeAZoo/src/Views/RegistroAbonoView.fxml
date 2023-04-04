@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contentRegistroAbono" blendMode="MULTIPLY" prefHeight="405.0" prefWidth="568.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.RegistroAbonoController">
+   <children>
+      <Label layoutX="64.0" layoutY="51.0" text="Fecha" />
+      <Label layoutX="64.0" layoutY="104.0" text="Cliente" />
+      <Label layoutX="64.0" layoutY="161.0" text="Abono" />
+      <Label layoutX="64.0" layoutY="222.0" text="Saldo" />
+      <TextField fx:id="tfdValorSaldo" editable="false" layoutX="154.0" layoutY="212.0" prefHeight="34.0" prefWidth="287.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnRegistrarAbono" layoutX="353.0" layoutY="276.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #209698;" text="Registrar" textFill="WHITE" />
+      <Button fx:id="btnLimpiarDatosAbonoView" layoutX="254.0" layoutY="276.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #209698;" text="Limpiar" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <DatePicker fx:id="tfdFechaAbono" layoutX="154.0" layoutY="47.0" prefHeight="25.0" prefWidth="287.0" showWeekNumbers="true" />
+      <ComboBox fx:id="cmbListaClienteAbono" layoutX="154.0" layoutY="100.0" prefHeight="25.0" prefWidth="287.0" promptText="Seleccione el Cliente..." />
+      <TextField fx:id="tfdValorAbono" layoutX="154.0" layoutY="153.0" prefHeight="34.0" prefWidth="287.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

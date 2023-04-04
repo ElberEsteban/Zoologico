@@ -1,0 +1,5 @@
+Se deben descargar las librerias de java FX y json
+
+https://jdk.java.net/javafx20/
+
+Json incluido en el paquete por defecto del proyecto.

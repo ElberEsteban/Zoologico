@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="600.0" maxWidth="730.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.TaquillaController">
+   <children>
+      <AnchorPane fx:id="contenPrincipal" layoutX="4.0" layoutY="7.0" prefHeight="81.0" prefWidth="710.0" style="-fx-background-color: #ffffff;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <ImageView fitHeight="70.0" fitWidth="428.0" layoutX="-65.0" layoutY="-1.0" pickOnBounds="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="272.0" AnchorPane.topAnchor="10.0">
+               <image>
+                  <Image url="@../Images/HeaderImagen.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="460.0" layoutY="17.0" text="ID Caja  :" />
+            <Label layoutX="460.0" layoutY="55.0" text="Nombre  :" />
+            <TextField fx:id="lblIdCaja" alignment="CENTER" editable="false" layoutX="533.0" layoutY="14.0" />
+            <TextField fx:id="lblNombreTaquillero" alignment="CENTER" editable="false" layoutX="533.0" layoutY="51.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="10.0" layoutY="111.0" prefHeight="474.0" prefWidth="133.0" style="-fx-background-color: #ffffff;" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="111.0">
+         <children>
+            <Button fx:id="btnRegistroClienteView" layoutX="23.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#registrarClienteView" prefHeight="42.0" prefWidth="87.0" style="-fx-background-color: #209698;" text="Registrar Cliente" textFill="WHITE" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="20.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnRegistroVentaView" layoutX="10.0" layoutY="80.0" mnemonicParsing="false" onMouseClicked="#registrarVentaView" prefHeight="42.0" prefWidth="87.0" style="-fx-background-color: #209698;" text="Registrar Venta" textFill="WHITE" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnRegistroAbonoView" layoutX="23.0" layoutY="141.0" mnemonicParsing="false" onMouseClicked="#registrarAbonoView" prefHeight="42.0" prefWidth="87.0" style="-fx-background-color: #209698;" text="Registrar Abono" textFill="WHITE" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnConsultarVisita" layoutX="23.0" layoutY="201.0" mnemonicParsing="false" onMouseClicked="#consultarVisitaView" prefHeight="42.0" prefWidth="87.0" style="-fx-background-color: #209698;" text="Consultar Visitas" textFill="WHITE" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnConsultarVentaView" layoutX="23.0" layoutY="262.0" mnemonicParsing="false" onMouseClicked="#consultarVentaView" prefHeight="42.0" prefWidth="87.0" style="-fx-background-color: #209698;" text="Consultar  Ventas" textFill="WHITE" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnGenerarReporte" layoutX="11.0" layoutY="322.0" mnemonicParsing="false" onMouseClicked="#consultarVentaView" prefHeight="42.0" prefWidth="113.0" style="-fx-background-color: #209698;" text="Generar Reporte" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="contentView" layoutX="153.0" layoutY="111.0" prefHeight="405.0" prefWidth="568.0" style="-fx-background-color: #ffffff;" />
+      <AnchorPane layoutX="152.0" layoutY="516.0" prefHeight="70.0" prefWidth="568.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Button fx:id="btnCancelarView" layoutX="447.0" layoutY="5.0" mnemonicParsing="false" onMouseClicked="#cerrarContentViewSecundario" prefHeight="35.0" prefWidth="87.0" style="-fx-background-color: #209698;" text="Cancelar" textFill="WHITE" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

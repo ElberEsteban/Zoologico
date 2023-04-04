@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contentRegistroVenta" blendMode="MULTIPLY" prefHeight="405.0" prefWidth="568.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.RegistroVentaController">
+   <children>
+      <Label layoutX="64.0" layoutY="51.0" text="Fecha" />
+      <Label layoutX="64.0" layoutY="104.0" text="Cliente" />
+      <Label layoutX="64.0" layoutY="161.0" text="Plan" />
+      <Label layoutX="64.0" layoutY="222.0" text="Costo" />
+      <TextField fx:id="tfdValorVenta" editable="false" layoutX="154.0" layoutY="212.0" prefHeight="34.0" prefWidth="287.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnRegistrarVenta" layoutX="351.0" layoutY="275.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #209698;" text="Registrar" textFill="WHITE" />
+      <Button fx:id="btnLimpiarDatosVentaView" layoutX="252.0" layoutY="276.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #209698;" text="Limpiar" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <DatePicker fx:id="tfdFechaVenta" layoutX="154.0" layoutY="47.0" onAction="#fechaVentaViewseleccionada" prefHeight="25.0" prefWidth="287.0" showWeekNumbers="true" />
+      <ComboBox fx:id="cmbListaClientes" layoutX="154.0" layoutY="100.0" onAction="#clienteVentaViewSeleccionado" prefHeight="25.0" prefWidth="287.0" promptText="Seleccione el Cliente..." />
+      <ComboBox fx:id="cmbListaPlanes" layoutX="152.0" layoutY="157.0" onAction="#planVentaViewSeleccionado" prefHeight="25.0" prefWidth="287.0" promptText="Seleccione el Plan..." />
+   </children>
+</AnchorPane>
